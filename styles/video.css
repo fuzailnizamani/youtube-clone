@@ -1,0 +1,143 @@
+.thumbnail{
+    width: 100%;
+}
+
+.video-title{
+    margin-top: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.youtube-video-link{
+    text-decoration: none;
+    color: black;
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-picture{
+    width: 36px;
+    border-radius: 50px;
+}
+
+.thumbnail-row{
+    margin-bottom: 8px;
+    position: relative;
+}
+
+.video-author, 
+.video-stats {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.video-author{
+    margin-bottom: 4px;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+}
+
+@media (max-width: 750px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 751px) and (min-width: 999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .video-title{
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .video-author,
+    .video-stats {
+      font-size: 14px;
+    }
+  }
+  
+@media (min-width: 1200.1px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-left: 130px;
+    }
+}  
+
+.video-time{
+    padding: 4px;
+    border-radius: 2px;  
+    position: absolute;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    bottom: 8px;
+    right: 5px;
+}
+
+.channel-picture-continer {
+    display: inline-block;
+    position: relative;
+}
+
+.tooltips{
+    background-color: white;
+    width: 200px;
+    padding: 12px 12px;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 6px;
+    position: absolute;
+    top: 55px;
+    z-index: 300;
+    opacity: 0;
+    pointer-events: none;
+
+    display: flex;
+    align-items: center;
+    transition: opacity 0.15s;
+}
+
+.profile-picture-continer{
+    width: 45px;
+    border-radius: 50px;
+    margin-right: 8px;
+}
+
+.video-author-continer{
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.video-stats-continer{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+}
+
+.channel-picture:hover .tooltips{
+    opacity: 1;
+}
